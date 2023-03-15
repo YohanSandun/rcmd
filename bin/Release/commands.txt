@@ -1,6 +1,0 @@
-# This is a comment.
-# In the following line 'hello' is the command name and rest of the line is the actual command.
-
-hello echo "Hello World"
-
-
