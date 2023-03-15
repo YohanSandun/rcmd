@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1678862972 source:e:\projects\c++\rcmd\src\command.cpp
+	"Command.h"
+
+1678862968 e:\projects\c++\rcmd\include\command.h
+	<iostream>
+
+1678865251 source:e:\projects\c++\rcmd\main.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	<string>
+	"Command.h"
+

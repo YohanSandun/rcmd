@@ -1,0 +1,2 @@
+hello python -h
+amor java -version
