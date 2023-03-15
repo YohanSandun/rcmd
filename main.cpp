@@ -2,6 +2,8 @@
 #include <vector>
 #include <fstream>
 #include <string>
+#include <algorithm>
+
 #include "Command.h"
 
 #define VERSION "1.0.0"
@@ -51,11 +53,28 @@ std::vector<Command> load_commands() {
 
     std::string line;
     while (std::getline(infile, line)) {
+
+        // Remove leading whitespaces
+        line.erase(line.begin(), find_if(line.begin(), line.end(), [](unsigned char ch) {
+            return !isspace(ch);
+        }));
+
+        // Remove trailing whitespaces
+        line.erase(find_if(line.rbegin(), line.rend(), [](unsigned char ch) {
+            return !isspace(ch);
+        }).base(), line.end());
+
+
+        // Checking for comment liens or empty lines
+        if (line.length() == 0 || line[0] == '#') {
+            continue;
+        }
+
         size_t pos = line.find(' ');
         if (pos != std::string::npos) {
             commands.push_back(Command(line.substr(0, pos), line.substr(pos + 1)));
         } else {
-            std::cout << "Unstructured commands in file." << std::endl;
+            std::cout << "Unstructured commands found in the file." << std::endl;
         }
     }
     infile.close();
