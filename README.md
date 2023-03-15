@@ -2,7 +2,7 @@
  Command line tool to save and run commands from anywhere.
 
 ## Installation
- Download the latest version from Releases page. Unzip the folder into a permenant location like "c:\rcmd\". Then add that path to the environemnt variables. Don't know how to add environment variables? See this.
+ Download the latest version from [Releases page](https://github.com/YohanSandun/rcmd/releases/). Unzip the folder into a permenant location like "c:\rcmd\". Then add that path to the environemnt variables. Don't know how to add environment variables? See this.
 
 ## Usage
  With rcmd executable you will get a file called commands.txt. This file contains all your commands. You can edit the file using a text editor such as Notepad. All the commands should follow following format
