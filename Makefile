@@ -2,10 +2,14 @@ ifeq ($(OS),Windows_NT)
 	RM := rmdir /Q /S
 	OUT := bin/rcmd.exe
 	CP := copy /Y
+	MKTEST := if not exist
+	MKDIR := mkdir
 else
 	RM := rm -f
 	OUT := bin/rcmd
 	CP := cp
+	MKTEST := 
+	MKDIR := mkdir -p
 endif
 
 all: dirs main.o Command.o
@@ -13,8 +17,8 @@ all: dirs main.o Command.o
 	$(CP) "commands.txt" "bin/commands.txt"
 
 dirs:
-	if not exist obj mkdir obj
-	if not exist bin mkdir bin
+	$(MKTEST) obj $(MKDIR) obj
+	$(MKTEST) bin $(MKDIR) bin
 
 main.o: main.cpp
 	g++ -Wall -fexceptions -O2 -Iinclude -c main.cpp -o obj/main.o
