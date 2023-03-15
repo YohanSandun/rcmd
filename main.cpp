@@ -6,7 +6,7 @@
 
 #include "Command.h"
 
-#define VERSION "1.0.0"
+#define VERSION "1.0.1"
 #define FILENAME "commands.txt"
 
 void print_welcome();
@@ -38,7 +38,7 @@ void print_welcome() {
     std::cout << "RCMD [Version " << VERSION << ']' << std::endl;
     std::cout << std::endl;
     std::cout << "Usage:" << std::endl;
-    std::cout << "\trcmd <command_name> [options]";
+    std::cout << "\trcmd <command_name>" << std::endl;
 }
 
 std::vector<Command> load_commands() {
@@ -47,7 +47,7 @@ std::vector<Command> load_commands() {
     std::vector<Command> commands;
 
     if (!infile.is_open()) {
-        std::cout << "Error: Could not open file " << filename << std::endl;
+        std::cout << "ERROR: Could not open file " << filename << std::endl;
         return commands;
     }
 
@@ -74,7 +74,7 @@ std::vector<Command> load_commands() {
         if (pos != std::string::npos) {
             commands.push_back(Command(line.substr(0, pos), line.substr(pos + 1)));
         } else {
-            std::cout << "Unstructured commands found in the file." << std::endl;
+            std::cout << "ERROR: Unstructured commands found in the file." << std::endl;
         }
     }
     infile.close();
