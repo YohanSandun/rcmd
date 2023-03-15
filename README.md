@@ -15,4 +15,4 @@ Here hello is the command name and echo "Hello World" is the actual command.
 You can add comments to the text file using #.
 
 eg: 
-# This is a comment
+ `# This is a comment`
