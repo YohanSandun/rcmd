@@ -1,5 +1,6 @@
 /bin
 /obj
+/.vscode
 
 # Prerequisites
 *.d
