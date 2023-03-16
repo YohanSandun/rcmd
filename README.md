@@ -38,7 +38,7 @@ You can add comments to the commands file using #.
 
 eg:  
 
-    \# This is a comment
+    # This is a comment
 
 ------
 **Current Directory**  
