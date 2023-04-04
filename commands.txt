@@ -3,4 +3,8 @@
 
 hello echo "Hello World"
 
+# You can pass arguments to the commands using $(ARG) placeholder.
 
+test echo "Hello $(ARG)"
+
+# This can be executed by running rcmd test "Harry" and it will give output as "Hello Harry"
