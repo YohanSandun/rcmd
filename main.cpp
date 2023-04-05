@@ -20,7 +20,7 @@ const std::string VAR_ARG = "$(ARG)";
 void print_welcome();
 std::vector<Command> load_commands(std::string);
 std::string get_exec_path();
-int count_args(const std::string, const std::string);
+int count_args(const std::string &str, const std::string &substr);
 
 int main(int argc, char **argv)
 {
