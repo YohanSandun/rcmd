@@ -11,7 +11,7 @@
 
 #include "Command.h"
 
-#define VERSION "1.0.1"
+#define VERSION "1.0.2"
 #define FILENAME "commands.txt"
 
 const std::string VAR_CPATH = "$(CPATH)";

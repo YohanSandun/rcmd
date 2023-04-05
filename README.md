@@ -4,15 +4,15 @@
 ## Installation
  **Windows**  
    
- [![CDNJS](https://img.shields.io/badge/Download%20for-Windows-brightgreen)](https://github.com/YohanSandun/rcmd/releases/download/V1.0.1/rcmd-windows.zip)  
- [Download](https://github.com/YohanSandun/rcmd/releases/download/V1.0.1/rcmd-windows.zip) the binaries for the latest release. Extract the downloaded zip file into a permanent location such as `c:\rcmd\`. Then add that path as a entry in the Path environment variable.  
+ [![CDNJS](https://img.shields.io/badge/Download%20for-Windows-brightgreen)](https://github.com/YohanSandun/rcmd/releases/download/V1.0.2/rcmd-windows.zip)  
+ [Download](https://github.com/YohanSandun/rcmd/releases/download/V1.0.2/rcmd-windows.zip) the binaries for the latest release. Extract the downloaded zip file into a permanent location such as `c:\rcmd\`. Then add that path as a entry in the Path environment variable.  
  Open command prompt and type `rcmd` and hit enter to see wheter it's working. If it's working file it should print the rcmd version to the screen.
    
 ------
  **Linux**
    
- [![CDNJS](https://img.shields.io/badge/Download%20for-Linux-blue)](https://github.com/YohanSandun/rcmd/releases/download/V1.0.1/rcmd-linux.zip)  
- [Download](https://github.com/YohanSandun/rcmd/releases/download/V1.0.1/rcmd-linux.zip) the binaries for the latest release. Extract the downloaded zip file into a location such as '/home/rcmd/'. Then run following command to create a shortcut for rcmd. Assume that rcmd binaries are in the path `/home/user/rcmd/`.
+ [![CDNJS](https://img.shields.io/badge/Download%20for-Linux-blue)](https://github.com/YohanSandun/rcmd/releases/download/V1.0.2/rcmd-linux.zip)  
+ [Download](https://github.com/YohanSandun/rcmd/releases/download/V1.0.2/rcmd-linux.zip) the binaries for the latest release. Extract the downloaded zip file into a location such as '/home/rcmd/'. Then run following command to create a shortcut for rcmd. Assume that rcmd binaries are in the path `/home/user/rcmd/`.
  
     alias rcmd=/home/user/rcmd/rcmd
 
