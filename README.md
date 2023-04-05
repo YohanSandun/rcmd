@@ -12,9 +12,9 @@
  **Linux**
    
  [![CDNJS](https://img.shields.io/badge/Download%20for-Linux-blue)](https://github.com/YohanSandun/rcmd/releases/download/V1.0.1/rcmd-linux.zip)  
- [Download](https://github.com/YohanSandun/rcmd/releases/download/V1.0.1/rcmd-linux.zip) the binaries for the latest release. Extract the downloaded zip file into a location such as '/home/rcmd/'. Then run following command to create a shortcut for rcmd. Assume that rcmd binaries are in the path `/home/rcmd/`.
+ [Download](https://github.com/YohanSandun/rcmd/releases/download/V1.0.1/rcmd-linux.zip) the binaries for the latest release. Extract the downloaded zip file into a location such as '/home/rcmd/'. Then run following command to create a shortcut for rcmd. Assume that rcmd binaries are in the path `/home/user/rcmd/`.
  
-    alias rcmd=/home/rcmd/rcmd
+    alias rcmd=/home/user/rcmd/rcmd
 
  Open terminal and type `rcmd` and hit enter to see wheter it's working. If it's working file it should print the rcmd version to the screen.
 
