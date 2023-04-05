@@ -47,10 +47,10 @@ You can pass arguments to the commands using $(ARG) placeholder.
 
 eg:  
 
-    # hello echo "Hello, $(ARG) $(ARG)"
-    # # Above hello command expecting two arguments and we can call it as follows,
-    # # rcmd hello Jane Doe
-    # # $(ARG) placeholders will replace with corresponding argument. If there are less or more arguments are passed than expected, the command is not executed.
+    hello echo "Hello, $(ARG) $(ARG)"
+    # Above hello command expecting two arguments and we can call it as follows,
+    # rcmd hello Jane Doe
+    # $(ARG) placeholders will replace with corresponding argument. If there are less or more arguments are passed than expected, the command is not executed.
 
 ------
 **Current Directory**  
